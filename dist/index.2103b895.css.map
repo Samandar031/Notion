@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/main.scss"],"sourcesContent":[".container {\r\n  background-color: blue;\r\n  width: 100%;\r\n  height: 100%;\r\n}"],"names":[],"version":3,"file":"index.2103b895.css.map","sourceRoot":"/__parcel_source_root/"}
