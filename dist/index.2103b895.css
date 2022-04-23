@@ -30,21 +30,30 @@ html {
   display: flex;
 }
 
+.navbar_items div:nth-child(2) {
+  border: 1px solid var(--text);
+  border-radius: .5rem;
+  padding: 0 1rem;
+}
+
 .search {
   width: 97%;
-  background-color: var(--text);
-  color: var(--back);
-  justify-content: center;
+  background-color: var(--back);
+  color: var(--text);
+  box-shadow: .1rem .1rem .3rem var(--text);
+  border-radius: 1rem;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 0 1rem;
   font-size: 1.5rem;
   display: flex;
 }
 
 .search input {
   width: 90%;
-  background-color: var(--text);
-  color: var(--back);
+  background-color: var(--back);
+  color: var(--text);
   border: none;
   outline: none;
   padding: 2rem 0;
@@ -53,7 +62,7 @@ html {
 }
 
 .search input::placeholder {
-  color: var(--back);
+  color: var(--text);
   font-size: 1.5rem;
 }
 
@@ -66,7 +75,8 @@ html {
 }
 
 .note_body .note_box {
-  border: 1px solid var(--text);
+  box-shadow: .1rem .1rem .5rem var(--text);
+  border-radius: .4rem;
   margin: 0;
   padding: 1rem;
 }
