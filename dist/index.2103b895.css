@@ -21,8 +21,34 @@ html {
   padding: 0 5rem;
 }
 
+.navbar_items {
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  display: flex;
+}
+
+.search {
+  padding: 2rem 3rem;
+}
+
+.search input {
+  width: 100%;
+  background-color: var(--back);
+  border: 1px solid var(--text);
+  outline: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.search input::placeholder {
+  font-size: 1.5rem;
+}
+
 .note_body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
   display: grid;
 }
 

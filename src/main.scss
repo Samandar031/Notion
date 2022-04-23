@@ -21,9 +21,33 @@ html{
   height: 100vh;
 }
 
+.navbar_items{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+}
+
+.search{
+  padding: 2rem 3rem;
+  input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    outline: none;
+    background-color: var(--back);
+    border: 1px solid var(--text);
+    &::placeholder{
+      font-size: 1.5rem;
+    }
+  }
+}
+
 .note_body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
   .note_box{
   margin: 0 auto;
   .note_content{
