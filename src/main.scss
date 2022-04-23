@@ -1,5 +1,32 @@
-.container {
-  background-color: blue;
-  width: 100%;
-  height: 100%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --back: #ACC8E5;
+  --text: #112A46;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.container-fluid {
+  max-width: 136.6rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.note_body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .note_box{
+  margin: 0 auto;
+  .note_content{
+    display: flex;
+    justify-content: space-between;
+  }
+  }
 }
