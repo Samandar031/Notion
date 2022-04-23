@@ -15,7 +15,7 @@ html {
   font-size: 62.5%;
 }
 
-.container-fluid {
+.containerP {
   max-width: 136.6rem;
   background-color: var(--back);
   height: 100%;
@@ -75,7 +75,7 @@ html {
 }
 
 .note_body .note_box {
-  box-shadow: .1rem .1rem .5rem var(--text);
+  border: 1px solid var(--text);
   border-radius: .4rem;
   margin: 0;
   padding: 1rem;

@@ -526,6 +526,13 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8ZNvh":[function(require,module,exports) {
+let container = document.querySelector(".container_fluid");
+let togle = document.querySelector(".nav_item_two");
+togle.addEventListener("click", function() {
+    container.classList.toggle("active");
+    if (container.classList.contains("active")) container.style.setProperty(--back, "blue");
+    else container.style.setProperty(--back, "white");
+});
 
 },{}]},["iwoPf","8ZNvh"], "8ZNvh", "parcelRequiree3a1")
 
