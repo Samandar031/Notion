@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 :root{
@@ -18,7 +20,7 @@ html{
   margin: 0 auto;
   padding: 0 5rem;
   background-color: var(--back);
-  height: 100vh;
+  height: 100%;
 }
 
 .navbar_items{
@@ -29,17 +31,27 @@ html{
 }
 
 .search{
-  padding: 2rem 3rem;
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text);
+  color: var(--back);
+  font-size: 1.5rem;
   input{
-    width: 100%;
-    padding: 2rem;
+    width: 90%;
+    padding: 2rem 0;
     font-size: 1.5rem;
     overflow: hidden;
     outline: none;
-    background-color: var(--back);
-    border: 1px solid var(--text);
+    background-color: var(--text);
+    border: none;
+    color: var(--back);
     &::placeholder{
       font-size: 1.5rem;
+      color: var(--back);
     }
   }
 }
@@ -48,11 +60,23 @@ html{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem;
   .note_box{
-  margin: 0 auto;
+  margin: 0;
+  border: 1px solid var(--text);
+  padding: 1rem;
+  textarea{
+    background-color: var(--back);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
   .note_content{
     display: flex;
     justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   }
 }

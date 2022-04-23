@@ -1,7 +1,9 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Nunito, sans-serif;
 }
 
 :root {
@@ -16,7 +18,7 @@ html {
 .container-fluid {
   max-width: 136.6rem;
   background-color: var(--back);
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   padding: 0 5rem;
 }
@@ -29,35 +31,57 @@ html {
 }
 
 .search {
-  padding: 2rem 3rem;
+  width: 97%;
+  background-color: var(--text);
+  color: var(--back);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  display: flex;
 }
 
 .search input {
-  width: 100%;
-  background-color: var(--back);
-  border: 1px solid var(--text);
+  width: 90%;
+  background-color: var(--text);
+  color: var(--back);
+  border: none;
   outline: none;
-  padding: 2rem;
+  padding: 2rem 0;
   font-size: 1.5rem;
   overflow: hidden;
 }
 
 .search input::placeholder {
+  color: var(--back);
   font-size: 1.5rem;
 }
 
 .note_body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem;
   display: grid;
 }
 
 .note_body .note_box {
-  margin: 0 auto;
+  border: 1px solid var(--text);
+  margin: 0;
+  padding: 1rem;
+}
+
+.note_body .note_box textarea {
+  background-color: var(--back);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
 }
 
 .note_body .note_box .note_content {
   justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.5rem;
   display: flex;
 }
 
