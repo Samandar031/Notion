@@ -15,6 +15,8 @@ html {
 
 .container-fluid {
   max-width: 136.6rem;
+  background-color: var(--back);
+  height: 100vh;
   margin: 0 auto;
   padding: 0 5rem;
 }
